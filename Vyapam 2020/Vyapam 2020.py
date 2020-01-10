@@ -9,10 +9,11 @@ from json import loads
 
 def saveImage(message,date,photo,sign,hand,savelocation):
 	qual=60
-	photo = Image.open('photo.jpg')
-	sign= Image.open("sign.jpg")
-	hand=Image.open("hand.jpg")
-	imgg= Image.open('Template/1.jpg')
+	photo = Image.open(photo)
+	sign= Image.open(sign)
+	hand=Image.open(hand)
+	# imgg= Image.open('Template/1.jpg')
+	imgg = Image.open("Template/1.jpg")
 	photo = photo.resize((260,325), Image.ANTIALIAS)
 	minus=int((325/100)*84)
 	# print(minus)
@@ -36,8 +37,7 @@ def saveImage(message,date,photo,sign,hand,savelocation):
 	imgg.paste(sign,(770,363))
 	imgg.paste(hand,(170,1450))
 	imgg =imgg.resize((1200,1700), Image.ANTIALIAS)
-	filename=savelocation.split("/")[-1]
-	imgg.save(filename+".jpg",optimize=True, dpi=(96,96), quality=int(qual))
+	imgg.save(savelocation+".jpg",optimize=True, dpi=(96,96), quality=int(qual))
 	return True
 
 def funcphotolocation():
@@ -62,7 +62,6 @@ def saving():
 		 if saveImage(nameyes.get(),dateyes.get(),photolocation,signlocation,handwritinglocation,savelocation):
 		 	filename=savelocation.split("/")[-1]
 		 	messagebox.showinfo("Saved","{}.jpg Saved".format(filename))
-		 	windowg.destroy()
 
 def header():
 	raw_data = urlopen("https://raw.githubusercontent.com/MayankFawkes/Vyapam/master/Header.png").read()
