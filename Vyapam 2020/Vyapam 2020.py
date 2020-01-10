@@ -136,7 +136,8 @@ def main(infomessage):
 	windowg.mainloop()
 
 def trying():
-	keys=entry.get()
+# 	keys=entry.get()
+	keys=entry.get().lower()
 	try:
 		d=loads(urlopen("https://raw.githubusercontent.com/MayankFawkes/Vyapam/master/key.json").read().decode())
 		main(d[keys])
