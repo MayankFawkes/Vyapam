@@ -1,2 +1,2 @@
-# vyapam template | template maker | peb template | templatemaker
+# Vyapam Template | Template Maker | Peb Template | Templatemaker
 Vyapam Software
