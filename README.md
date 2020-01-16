@@ -1,13 +1,13 @@
 # Vyapam Template | Template Maker | Peb Template | Templatemaker
 
-        =========================================================================
-                           <<---! MADE BY MAYANK GUPTA !--->>
-        =========================================================================
+                        =========================================================================
+                                           <<---! MADE BY MAYANK GUPTA !--->>
+                        =========================================================================
 
 # Vyapam
 * Template Maker for PEB MP GOV India
 # Download
-To download the Software [Click Here](https://github.com/MayankFawkes/Vyapam/releases/tag/2020)
+* To download the Software [Click Here](https://github.com/MayankFawkes/Vyapam/releases/tag/2020)
 
 # Terms and Condition
 * Don't use VPN
